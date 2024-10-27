@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terminal Interface</title>
     <link rel="stylesheet" href="/src/terminal/css-style/style.css"> <!-- Link to your CSS file -->
 </head>
+
 <body>
     <div class="terminal">
         <div class="terminal-header">
@@ -23,9 +25,14 @@
             <span class="prompt">user@terminal:~$</span>
             <span id="input" contenteditable="true"></span>
         </div>
+        <div class="prompt-output">
+            <p id="prompt-message">{$TEST$}->></p>
+        </div>
     </div>
-    
 
-    <script src="/src/terminal/js-modules/app.js"></script> <!-- Link to your JavaScript file -->
+
+
+    <script src="/src/terminal/js-modules/utilityFunctions.js"></script> <!-- Link to your JavaScript file -->
 </body>
+
 </html>

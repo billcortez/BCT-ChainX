@@ -107,3 +107,26 @@ body {
     height: 24px;
     border-radius: 4px; /* Optional: rounded corners */
 }
+
+
+#input {
+    display: inline-block;           /* Allows width and height properties */
+    padding: 5px;                  /* Add padding for better spacing */
+    border: 1px solid #0987b1;         /* Add a border */
+    border-radius: 4px;             /* Rounded corners */
+    min-width: 250px;               /* Set a minimum width */
+    min-height: 10px;               /* Set a minimum height */
+    background-color: #efeb04;      /* Light background color */
+    font-family: Arial, sans-serif;  /* Font style */
+    font-size: 12px;                /* Font size */
+    font-weight: bolder;
+    color: #333;                    /* Text color */
+    transition: border-color 0.3s;  /* Smooth transition for border color */
+}
+
+/* Focus styling */
+#input:focus {
+    border-color: royalblue;          /* Change border color on focus */
+    background-color: #00ff00;         /* Change background color on focus */
+    outline: none;                   /* Remove default outline */
+}
