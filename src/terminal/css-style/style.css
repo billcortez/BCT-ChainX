@@ -1,0 +1,109 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.terminal {
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 800px;
+    height: 600px; /* Fixed height for the terminal */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.terminal-header {
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.header-buttons {
+    display: flex;
+    margin-right: auto;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.red {
+    background-color: #ff5f57;
+}
+
+.yellow {
+    background-color: #ffbd2e;
+}
+
+.green {
+    background-color: #28c840;
+}
+
+.header-title {
+    color: hsl(75, 96%, 34%);
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.terminal-output {
+    padding: 15px;
+    min-height: 500px; /* Height for output area */
+    overflow-y: auto;  /* Scrollable output */
+    background-color: #1e1e1e; /* Match the body background */
+}
+
+.prompt {
+    color: #00ff00; /* Green prompt color */
+}
+
+#input {
+    outline: none; /* Remove the default outline */
+    color: #ffffff;
+    caret-color: #00ff00; /* Green caret color */
+    white-space: pre-wrap; /* Keep whitespace and line breaks */
+    padding-left: 5px; /* Padding for input text */
+}
+
+/* Style for output lines */
+.output-line {
+    color: #ffffff; /* White text for output lines */
+    margin-top: 5px; /* Space between output lines */
+}
+
+/* Adding a hover effect on the header buttons */
+.circle:hover {
+    opacity: 0.7; /* Slightly fade the button on hover */
+}
+.icon-logo {
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px; /* Space between icon and title */
+}
+
+.icon-logo img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px;
+    border-radius: 4px; /* Optional: rounded corners */
+}

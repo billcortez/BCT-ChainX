@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terminal Interface</title>
+    <link rel="stylesheet" href="/src/terminal/css-style/style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <div class="terminal">
+        <div class="terminal-header">
+            <div class="header-buttons">
+                <div class="circle red"></div>
+                <div class="circle yellow"></div>
+                <div class="circle green"></div>
+            </div>
+            <div class="icon-logo">
+                <img src="/src/terminal/icon-png/256px-app-icon.png" alt="Logo" />
+            </div>
+            <span class="header-title">BCT ChainX</span>
+        </div>
+        <div class="terminal-output" id="output">
+            <span class="prompt">user@terminal:~$</span>
+            <span id="input" contenteditable="true"></span>
+        </div>
+    </div>
+    
+
+    <script src="/src/terminal/js-modules/app.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
